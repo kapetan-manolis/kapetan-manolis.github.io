@@ -14,23 +14,67 @@
 </head>
 
 <body>
-  <div id="contact_form">
-  <h3>Let's start a project</h3>
-  <p>If you have a project in mind, you can use the below form to contact us.</p>
-  <hr>
-<form id="cont-form" method="post">
-    <input type="text" name="name" id="name" placeholder="Name"><span>*</span><br>
-    <input type="text" spellcheck='false' name="email" id="email" placeholder="Email Address" ><span>*</span><br>
-    <input type="text" name="phone"id="phone" placeholder="Phone Number"><span style="color:#fff">*</span><br>
-    <textarea name="comments" placeholder="Tell us a little about your project"></textarea><span style="margin-top:12px;">*</span><br>
-    <a id="send-btn" href="#">Send</a>
-    <div class="clr"></div>
-</form>
-</div>
-<div id="address">
-<p>or you can send an email or call us.</p>
-<span>info@prasanjit.com</span>
-<span>(+91) 9779999231</span>
-<span>#22168, Phase iii, Bathinda.</span>
-</div>
+  <div id="main">
+
+    <!-- begin header -->
+    <header>
+      <div id="logo"><h1>PHOTO<a href="#">ART</a>WORK 2_reverse</h1></div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about me</a></li>
+          <li><a href="#">my portfolio</a>
+            <ul>
+              <li><a href="portfolio_one.html">portfolio_one</a></li>
+              <li><a href="portfolio_two.html">portfolio_two</a></li>
+            </ul>
+          </li>
+          <li class="selected"><a href="blog.html">blog</a></li>
+          <li><a href="contact.php">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- begin content -->
+    <div id="contact_form">
+    <h3>Let's start a project</h3>
+    <p>If you have a project in mind, you can use the below form to contact us.</p>
+    <hr>
+  <form id="cont-form" method="post">
+      <input type="text" name="name" id="name" placeholder="Name"><span>*</span><br>
+      <input type="text" spellcheck='false' name="email" id="email" placeholder="Email Address" ><span>*</span><br>
+      <input type="text" name="phone"id="phone" placeholder="Phone Number"><span style="color:#fff">*</span><br>
+      <textarea name="comments" placeholder="Tell us a little about your project"></textarea><span style="margin-top:12px;">*</span><br>
+      <a id="send-btn" href="#">Send</a>
+      <div class="clr"></div>
+  </form>
+  </div>
+  <div id="address">
+  <p>or you can send an email or call us.</p>
+  <span>info@prasanjit.com</span>
+  <span>(+91) 9779999231</span>
+  <span>#22168, Phase iii, Bathinda.</span>
+  </div>
+    <!-- end content -->
+
+    <!-- begin footer -->
+    <footer>
+      <p><a href="http://www.css3templates.co.uk">Design from css3templates.co.uk</a>.</p>
+      <p><img src="images/twitter.png" alt="twitter" />&nbsp;<img src="images/facebook.png" alt="facebook" />&nbsp;<img src="images/rss.png" alt="rss" /></p>
+    </footer>
+    <!-- end footer -->
+
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <!-- initialise sooperfish menu -->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
 </html>
